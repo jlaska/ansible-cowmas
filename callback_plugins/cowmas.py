@@ -98,7 +98,7 @@ class CallbackModule(CallbackModule):
             force_color = C.COLOR_ERROR
         elif len(stats.dark):
             force_color = C.COLOR_UNREACHABLE
-        elif len(stats.changes):
+        elif len(stats.changed):
             force_color = C.COLOR_HIGHLIGHT
         else:
             force_color = None
