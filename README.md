@@ -2,10 +2,11 @@
 
 Use the provided `ansible.cfg` to add some holiday cheer to your ansible
 playbooks.  For more advanced use of callback plugins, refer to [the
-documentation|https://docs.ansible.com/ansible/devel/plugins/callback.html#enabling-callback-plugins].
+documentation](https://docs.ansible.com/ansible/devel/plugins/callback.html#enabling-callback-plugins).
 
 ## Example
 
+```
 $ ansible-playbook -i some.example.org, -c local hello_world.py
 
 PLAY [Hello World Sample] ****************************************************
@@ -36,4 +37,6 @@ Happy Holidays from team Ansible!
  *        ||-||\.____./|| |
           || ||     || || A      *
    *      <> <>     <> <>
+
+```
 
