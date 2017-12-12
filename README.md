@@ -6,4 +6,4 @@ documentation](https://docs.ansible.com/ansible/devel/plugins/callback.html#enab
 
 ## Example
 
-![image](https://user-images.githubusercontent.com/1051173/33900073-548fc930-df3b-11e7-9e2a-27b56908632d.png)
+![ansible-cowmas](https://user-images.githubusercontent.com/1051173/33909261-1101987e-df59-11e7-8d96-a832602c4b71.gif)
