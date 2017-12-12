@@ -6,37 +6,4 @@ documentation](https://docs.ansible.com/ansible/devel/plugins/callback.html#enab
 
 ## Example
 
-```
-$ ansible-playbook -i some.example.org, -c local hello_world.py
-
-PLAY [Hello World Sample] ****************************************************
-
-TASK [Gathering Facts] *******************************************************
-ok: [some.example.org]
-
-TASK [Hello Message] *********************************************************
-ok: [some.example.org] => {
-    "msg": "Hello World!"
-}
-
-PLAY RECAP *******************************************************************
-some.example.org           : ok=2    changed=0    unreachable=0    failed=0
-
-Happy Holidays from team Ansible!
-
-
-*           *
-                                *
-    \/ \/  \/ \/
- *    \/    \/      *
-      (A)  (A)
-       \ ^^ / 			 *
-       (o)(o)--)---------\.
-       |    |          A  \
-        \__/             ,|  *
- *        ||-||\.____./|| |
-          || ||     || || A      *
-   *      <> <>     <> <>
-
-```
-
+![image](https://user-images.githubusercontent.com/1051173/33900073-548fc930-df3b-11e7-9e2a-27b56908632d.png)
