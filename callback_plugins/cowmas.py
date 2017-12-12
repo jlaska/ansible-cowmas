@@ -13,9 +13,8 @@ all_colors = [C.COLOR_CHANGED, C.COLOR_DEBUG, C.COLOR_DEPRECATE, C.COLOR_DIFF_AD
 def colorize(txt, color=None):
     output = ''
     if color is None:
-        rand_start = random.randint(0, len(all_colors))
+        # rand_start = random.randint(0, len(all_colors))
         for (idx, char) in enumerate(txt):
-            # output += stringc(char, all_colors[idx % len(all_colors)])
             output += stringc(char, random.sample(all_colors, 1)[0])
             # output += stringc(char, all_colors[(rand_start + idx) % len(all_colors)])
     else:
@@ -99,8 +98,9 @@ class CallbackModule(CallbackModule):
             force_color = C.COLOR_ERROR
         elif len(stats.dark):
             force_color = C.COLOR_UNREACHABLE
-        else:
+        elif len(stats.changes):
             force_color = C.COLOR_HIGHLIGHT
+        else:
             force_color = None
 
         print colorize('''
