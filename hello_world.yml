@@ -1,6 +1,11 @@
 - name: Hello World Sample
   hosts: all
+  vars:
+      failed: false
+      changed: false
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello World!"
+      failed_when: failed
+      changed_when: changed
