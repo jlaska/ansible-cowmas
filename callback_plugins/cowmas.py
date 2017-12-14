@@ -92,7 +92,7 @@ class CallbackModule(CallbackModule):
 
     def v2_playbook_on_stats(self, stats):
         super(CallbackModule, self).v2_playbook_on_stats(stats)
-        print colorize("Happy Holidays from team Ansible!\n")
+        print colorize("HAPPY AUTOMATING TO ALL!\n")
 
         if len(stats.failures):
             force_color = C.COLOR_ERROR
